@@ -9,13 +9,14 @@
 <div class="form-group">
     <label class="nv-label" for="Apellidos">{{ 'Apellidos' }}</label>
     <input type="text" class="form-control {{ $errors->has('Apellidos') ? 'is-invalid' : '' }}" name="Apellidos"
-        autocomplete="" id="Apellidos"  value="{{ isset($empleado->Apellidos) ? $empleado->Apellidos : old('Nombres') }}">
+        autocomplete="" id="Apellidos"
+        value="{{ isset($empleado->Apellidos) ? $empleado->Apellidos : old('Nombres') }}">
     {!! $errors->first('Apellidos', '<div class="invalid-feedback">:message</div>') !!}
 </div>
 <div class="form-group">
     <label class="nv-label" for="Correo">{{ 'Correo' }}</label>
     <input type="email" class="form-control {{ $errors->has('Correo') ? 'is-invalid' : '' }}" name="Correo"
-        autocomplete="" id="Correo"  value="{{ isset($empleado->Correo) ? $empleado->Correo : old('Nombres') }}">
+        autocomplete="" id="Correo" value="{{ isset($empleado->Correo) ? $empleado->Correo : old('Nombres') }}">
     {!! $errors->first('Correo', '<div class="invalid-feedback">:message</div>') !!}
 </div>
 <div class="form-group">
